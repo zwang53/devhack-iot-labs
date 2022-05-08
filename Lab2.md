@@ -132,7 +132,6 @@ Once deployment is completed, click `Go to resource` to TSI Environment. You wil
 
 click `Go to TSI Explorer`. The TSI Explorer is opened in a separated window.
 
-![](images/TSI_explorer_window.png)
 
 If you have multiple TSI instances, you should select the one you created `tsi01` earlier.
 
