@@ -109,13 +109,13 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
 
 
   <img src="images/idf-iothub.png">
-   
+   <img src="images/c1.png">
 - **Azure IoT middleware for FreeROTS Sample Configuration**
     
     Update the `WiFi SSID` and `WiFi Password` from here.
     
     <img src="images/wifi-settings.png">
-
+    <img src="images/c2.png">
 
 - **Compiler options**
   
@@ -123,7 +123,11 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
      <img src="images/compiler-options-1.png">
     <img src="images/compiler-options-2.png">
     <img src="images/compiler-options-3.png">
+    <img src="images/c3.png">
+    <img src="images/c4.png">
+    <img src="images/c5.png">
     <img src="images/10.png">
+    
 - Press key `Q` and then `S` to exit the command line.
 
 
