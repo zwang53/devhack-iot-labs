@@ -17,7 +17,8 @@ Login to your Azure Portal, click `+ Create a resource`, enter `Storage account`
 Follow below settings to create a new storage account. Try to use the `existing Resource Group` and same region where you created the IoT Hub in Lab 1. 
 
 <img src="images/create_storage_account.png" width=70%>
-
+<img src="images/14.png" width=70%>
+<img src="images/15.png" width=70%>
 Click `Review and create`.
 
 Once the depoayment is complete, click `Go to resource`.
@@ -25,7 +26,7 @@ Once the depoayment is complete, click `Go to resource`.
 On Storage account blade, click `Data storage` -> `Containers` -> `+ Container`. Enter a name for the New container, and then click `Create`.
 
 <img src="images/create_container.png" width=70%>
-
+<img src="images/18.png" width=70%>
 Once created, you should see the container listed.
 
 
@@ -39,7 +40,7 @@ Click `Messaging` -> `Message routing` -> `Custom endpoints` -> `+ Add`.
 On `Add a storage endpoint` blade, enter `Endpoint name`, and then `Pick a container` -> Select the container created earlier -> click `Create`.
 
 <img src="images/add-storage-endpoint.png" width=70%>
-
+<img src="images/19.png" width=70%>
 
 ## 2.3 Set up routing endpoints
 
@@ -48,7 +49,7 @@ Click `Routes` -> `+ Add`.
 Follow below screenshot to `Add a route`.
 
 <img src="images/add-route.png" width=70%>
-
+<img src="images/21.png" width=70%>
 
 ## 2.4 View the routed messages
 
