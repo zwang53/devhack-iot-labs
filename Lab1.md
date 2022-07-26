@@ -162,7 +162,7 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
   
   <img src="images/home-screen.png" width=50%>
   <img src="images/11.png">
-
+  <img src="images/13.jpg">
 ## 3.5 Confirm device connection
 
 - Use ESP-IDF monitor command.
