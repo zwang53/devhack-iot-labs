@@ -96,7 +96,8 @@
   ```
   idf.py menuconfig
   ```
-  
+   <img src="images/1.png">
+     <img src="images/2.png">
 ### 3.2 Update the configuration
 
 On `Espressif IoT Development Framework Configuration` UI, you may need to update below settings:
@@ -138,7 +139,7 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
     <img src="images/build-1.png">
 
     <img src="images/build-2.png">
-
+    <img src="images/3.png">
 
 ## 3.4 Flash the image
 
@@ -175,8 +176,9 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
   <img src="images/monitor-log-1.png">
 
   <img src="images/monitor-log-2.png">
-
-
+  <img src="images/4.png">
+  <img src="images/5.png">
+  <img src="images/6.png">
 ## 4. Use IoT Explorer to view the telemetry data sent to IoT Hub
 
 - Open Azure IoT Explorer.
@@ -187,7 +189,7 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
 - On Azure IoT Explorer, click device ID `esp32-001` -> click `Telemetry` -> Click `Start`, and you will see the telemetries sent to Azure IoT Hub.
 
   <img src="images/view-telemetry.png">
-
+  <img src="images/7.png">
   < **END OF Lab1** >
   
   
