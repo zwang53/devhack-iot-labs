@@ -51,7 +51,7 @@
 - Search `IoT Hub` and click `Create`. Create a new Resource Group `DevHack0510` -> Enter a name for your IoT Hub: `iothub-0510` -> Select Region: `Southeast Asia` -> click `Review + Create` -> click `Create`.
 
 <img src="images/iothub.png" width=75%>
-
+<img src="images/8.png" width=75%>
 
 ### 2.2 Create IoT Hub device
 
@@ -68,7 +68,7 @@
 - Once created, you will see:
 
     ![](images/add-device.png)
-
+    ![](images/9.png)
 - Click `esp32-001` and make a note of below:
   - Device ID: `esp32-001`
   - Primary Key: `oSGa*****************dqY=`
@@ -123,7 +123,7 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
      <img src="images/compiler-options-1.png">
     <img src="images/compiler-options-2.png">
     <img src="images/compiler-options-3.png">
-
+    <img src="images/10.png">
 - Press key `Q` and then `S` to exit the command line.
 
 
@@ -161,7 +161,7 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
 - Once flashed, the dev kit will reboot and the LCD will be powered on. 
   
   <img src="images/home-screen.png" width=50%>
-
+  <img src="images/11.png">
 
 ## 3.5 Confirm device connection
 
@@ -189,6 +189,7 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
 - On Azure IoT Explorer, click device ID `esp32-001` -> click `Telemetry` -> Click `Start`, and you will see the telemetries sent to Azure IoT Hub.
 
   <img src="images/view-telemetry.png">
+  <img src="images/12.png">
   <img src="images/7.png">
   < **END OF Lab1** >
   
