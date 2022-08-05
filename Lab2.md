@@ -78,11 +78,11 @@ View the downloaded .avro file in a text editor, ideally in VS Code.
 
 Go back to Azure Portal. Click `+ Create a resource` -> Search `Event Hubs` -> Click `Create`.
 
-On `Create Namespace` blade, Select existing `Resource Group`, enter a `Namespace name` -> Location: `Southeast Asia` -> Pricing tier: `Standard` -> `Review + create`.
+On `Create Namespace` blade, Select existing `Resource Group`, enter a `Namespace name` -> Location: `Southeast Asia` -> Pricing tier: `Basic` -> `Review + create`.
 
 <img src="images/create-eventhub-ns.png" width=70%>
 
-Once deployment is complete, click `Go to resource` to the `Event Hubs Namespace` page.
+Once deployment is complete, click `Go to resource` to the `Event Hubs Namespace` page. This process may have to wait for a long time.
 <img src="images/3.1.1.png" width=70%>
 <img src="images/3.1.12.png" width=70%>
 <img src="images/3.1.123.png" width=70%>
@@ -97,13 +97,13 @@ Once created, you will see:
 
 <img src="images/create-eventhub-instance.png" width=70%>
 <img src="images/3.1.2.png" width=70%>
-<img src="images/3.1.22.png" width=70%>
-<img src="images/3.1.23.png" width=70%>
+
+
 Click `Settings` -> `Shared access policies` -> `+ Add`. On Add SAS Policy blade, enter Policy name: `policy01` -> tick `Manaage` -> click `Create`.
 
 Once created, the policy will be listed.
-
-
+<img src="images/3.1.22.png" width=70%>
+<img src="images/3.1.23.png" width=70%>
 
 ### 3.2 Create new custom endpoint
 
