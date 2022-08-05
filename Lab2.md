@@ -85,11 +85,12 @@ On `Create Namespace` blade, Select existing `Resource Group`, enter a `Namespac
 Once deployment is complete, click `Go to resource` to the `Event Hubs Namespace` page. This process may have to wait for a long time.
 <img src="images/3.1.1.png" width=70%>
 <img src="images/3.1.12.png" width=70%>
-<img src="images/3.1.123.png" width=70%>
-<img src="images/3.1.1234.png" width=70%>
+
 #### 3.1.2 Create an Event Hub Instance
 
 Click `+ Event Hub`, enter name: `eventhub1` -> click `Create`. 
+
+<img src="images/3.1.20.png" width=70%>
 
 Once created, go to `Event Hub Namespace` page -> `Entities -> Event Hubs` ->  click `event01` -> `+ Consumer group` -> enter Name: `cg01` -> click `Create`.
 
@@ -102,6 +103,7 @@ Once created, you will see:
 Click `Settings` -> `Shared access policies` -> `+ Add`. On Add SAS Policy blade, enter Policy name: `policy01` -> tick `Manaage` -> click `Create`.
 
 Once created, the policy will be listed.
+
 <img src="images/3.1.22.png" width=70%>
 <img src="images/3.1.23.png" width=70%>
 
@@ -130,10 +132,11 @@ Select the `Resource Group` you created ealier -> enter Environment name: `tsi01
 
 <img src="images/create-tsi-1.png" width=70%>
 <img src="images/3.4.1.png" width=70%>
-<img src="images/3.4.2.png" width=70%>
+
 On `Event Source` blade -> Source type: `Event Hub` -> enter a name:`eventhub-src` -> select Subscription -> select existing event hub namespace: `eventhub0510` -> Event hub name: `event01` -> Event Hub access access policy name: `policy01`-> Event Hub consumer group: `cg01` -> click `Review + Create`.
 
 <img src="images/create-tsi-2.png" width=70%>
+<img src="images/3.4.2.png" width=70%>
 <img src="images/3.4.3.png" width=70%>
 
 ### 3.4 View data on TSI Explorer
