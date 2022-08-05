@@ -17,8 +17,7 @@ Login to your Azure Portal, click `+ Create a resource`, enter `Storage account`
 Follow below settings to create a new storage account. Try to use the `existing Resource Group` and same region where you created the IoT Hub in Lab 1. 
 
 <img src="images/create_storage_account.png" width=70%>
-<img src="images/14.png" width=70%>
-<img src="images/15.png" width=70%>
+
 Click `Review and create`.
 
 Once the depoayment is complete, click `Go to resource`.
@@ -26,7 +25,7 @@ Once the depoayment is complete, click `Go to resource`.
 On Storage account blade, click `Data storage` -> `Containers` -> `+ Container`. Enter a name for the New container, and then click `Create`.
 
 <img src="images/create_container.png" width=70%>
-<img src="images/18.png" width=70%>
+
 Once created, you should see the container listed.
 
 
@@ -40,7 +39,8 @@ Click `Messaging` -> `Message routing` -> `Custom endpoints` -> `+ Add`.
 On `Add a storage endpoint` blade, enter `Endpoint name`, and then `Pick a container` -> Select the container created earlier -> click `Create`.
 
 <img src="images/add-storage-endpoint.png" width=70%>
-<img src="images/19.png" width=70%>
+<img src="images/2.2.png" width=70%>
+<img src="images/2.2.1.png" width=70%>
 
 ## 2.3 Set up routing endpoints
 
@@ -60,11 +60,14 @@ Navigate to `Storage account` blade -> `Data storage -> Containers` -> click con
 Keep clicking folder name to the blob level. You will see a few blobs created as below.
 
 <img src="images/container-blobs.png" width=70%>
-
+<img src="images/2.4.1.png" width=70%>
+<img src="images/2.4.2.png" width=70%>
 Try to download one of the blobs to local. 
 
 View the downloaded .avro file in a text editor, ideally in VS Code. 
-
+<img src="images/2.4.3.png" width=70%>
+<img src="images/2.4.4.png" width=70%>
+<img src="images/2.4.5.png" width=70%>
 
 
 ## 3. Visualize telemetry in Time Series Insight
@@ -80,7 +83,10 @@ On `Create Namespace` blade, Select existing `Resource Group`, enter a `Namespac
 <img src="images/create-eventhub-ns.png" width=70%>
 
 Once deployment is complete, click `Go to resource` to the `Event Hubs Namespace` page.
-
+<img src="images/3.1.1.png" width=70%>
+<img src="images/3.1.12.png" width=70%>
+<img src="images/3.1.123.png" width=70%>
+<img src="images/3.1.1234.png" width=70%>
 #### 3.1.2 Create an Event Hub Instance
 
 Click `+ Event Hub`, enter name: `eventhub1` -> click `Create`. 
@@ -90,7 +96,9 @@ Once created, go to `Event Hub Namespace` page -> `Entities -> Event Hubs` ->  c
 Once created, you will see:
 
 <img src="images/create-eventhub-instance.png" width=70%>
-
+<img src="images/3.1.2.png" width=70%>
+<img src="images/3.1.22.png" width=70%>
+<img src="images/3.1.23.png" width=70%>
 Click `Settings` -> `Shared access policies` -> `+ Add`. On Add SAS Policy blade, enter Policy name: `policy01` -> tick `Manaage` -> click `Create`.
 
 Once created, the policy will be listed.
@@ -102,18 +110,18 @@ Once created, the policy will be listed.
 Go to IoT Hub -> `Messaging` -> `Message routing` -> `Custom endpoints` -> `+ Add` -> `Event hubs` -> Endpoint name: `eventhub` -> select existing Event hub namespace: `eventhub0510` -> select existing Event hub instance: `event01` -> click `Create`.
 
 <img src="images/create-eventhub-endpoint.png" width=70%>
-
+<img src="images/3.2.1.png" width=70%>
 Once created, you will see endpoints listed.
-
+<img src="images/3.2.2.png" width=70%>
 
 ### 3.3 Create new route
 
 Click `Routes` -> `+ Add` -> enter Name: `route2tsi` -> select existing endpoint: `eventhub` -> Data source: `Device Telemetry Messages` ->  click `Save`.
 
 <img src="images/create-route-eventhub.png" width=70%>
+<img src="images/3.3.1.png" width=70%>
 
-
-### 3.3 Create TSI Environment
+### 3.4 Create TSI Environment
 
 Go back to Azure Portal. Click `+ Create a resource` -> Search `Time Series Insights` -> Click `Create`.
 
@@ -121,11 +129,12 @@ Go back to Azure Portal. Click `+ Create a resource` -> Search `Time Series Insi
 Select the `Resource Group` you created ealier -> enter Environment name: `tsi01` -> location: `Southeast Asia` -> enter Property name: `esp001` -> enter Storage account name: `tsistorage0510` -> click `Next: Event Source`.
 
 <img src="images/create-tsi-1.png" width=70%>
-
+<img src="images/3.4.1.png" width=70%>
+<img src="images/3.4.2.png" width=70%>
 On `Event Source` blade -> Source type: `Event Hub` -> enter a name:`eventhub-src` -> select Subscription -> select existing event hub namespace: `eventhub0510` -> Event hub name: `event01` -> Event Hub access access policy name: `policy01`-> Event Hub consumer group: `cg01` -> click `Review + Create`.
 
 <img src="images/create-tsi-2.png" width=70%>
-
+<img src="images/3.4.3.png" width=70%>
 
 ### 3.4 View data on TSI Explorer
 
