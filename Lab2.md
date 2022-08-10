@@ -158,17 +158,17 @@ Click `Model` -> `Instances` -> `Actions` -> click `Edit instance` -> Enter Name
 
 Click `Analyze` -> `esp001` -> tick `humidity`, `light`, `pressure`,`temperature` -> click `Add`. 
 
-<img src="images/tsi-explorer.png" width=70%>
+<img src="images/tsi-explorer.png" width=100%>
 
 #### 3.4.3 View and export the real-time telemetry data
 
 You may view the data in different line chart, Zoom in/out, view as a table, Connect to Power BI, etc.
 
-<img src="images/heatmap-chart.png" width=70%>
+<img src="images/heatmap-chart.png" width=100%>
 
-<img src="images/show-as-table.png" width=70%>
+<img src="images/show-as-table.png" width=100%>
 
-<img src="images/connect-to-pbi.png" width=70%>
+<img src="images/connect-to-pbi.png" width=100%>
 
 
 
