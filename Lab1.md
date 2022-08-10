@@ -47,7 +47,7 @@
 ## 2. Create and configure Azure IoT Hub
 
 ### 2.1 Create IoT Hub
-- Login to Azure Portal using your Azure Subscription.
+- Login to [Azure Portal](portal.azure.com) using your Azure Subscription.
 - Search `IoT Hub` and click `Create`. Create a new Resource Group `DevHack0510` -> Enter a name for your IoT Hub: `iothub-0510` -> Select Region: `Southeast Asia` -> click `Review + Create` -> click `Create`.
 
 <img src="images/iothub.png" width=75%>
@@ -110,30 +110,40 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
 - **Azure IoT Middleware for FreeRTOS Main Task Configuration**
 
   <img src="images/iothub-main-task.png">
+    
     Move cursor to `Azure IoT middleware Main Task Configuration` and click `ENTER` -> Enter IoT Hub FQDN: `iothub-0510.azure-devices.net` -> Enter Device ID: `esp32-001` -> Enter Device Key: `oSGa************dqY=`.
 
 
   <img src="images/idf-iothub.png">
+
+  And then click `ESC` to turn back to the Main Config page.
+
    <img src="images/c1.png">
 - **Azure IoT middleware for FreeROTS Sample Configuration**
     
     Update the `WiFi SSID` and `WiFi Password` from here.
     
     <img src="images/wifi-settings.png">
+
     <img src="images/c2.png">
+    
+    Then click `ESC` and back to Main page
+
+
+
 
 - **Compiler options**
-  
+  Find the Compiler options, click `Enter`. 
   Change to `Optimize for size (-Os)`.
      <img src="images/compiler-options-1.png">
     <img src="images/compiler-options-2.png">
     <img src="images/compiler-options-3.png">
-    <img src="images/c3.png">
-    <img src="images/c4.png">
-    <img src="images/c5.png">
-    <img src="images/10.png">
+
+
     
 - Press key `Q` and then `S` to exit the command line.
+
+    <img src="images/10.png">
 
 
 ## 3.3 Build the image
@@ -170,8 +180,7 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
 - Once flashed, the dev kit will reboot and the LCD will be powered on. 
   
   <img src="images/home-screen.png" width=50%>
-  <img src="images/11.png">
-  <img src="images/13.jpg"  width=50%>
+
 ## 3.5 Confirm device connection
 
 - Use ESP-IDF monitor command.
@@ -182,9 +191,7 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
 
   The monitor logs shall look as below.
 
-  <img src="images/monitor-log-1.png">
 
-  <img src="images/monitor-log-2.png">
   <img src="images/4.png">
   <img src="images/5.png">
   <img src="images/6.png">
@@ -198,9 +205,10 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
 - On Azure IoT Explorer, click device ID `esp32-001` -> click `Telemetry` -> Click `Start`, and you will see the telemetries sent to Azure IoT Hub.
 
   <img src="images/view-telemetry.png">
-  <img src="images/12.png">
-  <img src="images/7.png">
-  < **END OF Lab1** >
+
+  < **END OF Lab 1** >
+  
+  Let's go to [Lab 2 - Visualize ESP32 Telemetry on Azure](Lab2.md)
   
   
 
