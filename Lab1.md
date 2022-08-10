@@ -78,7 +78,12 @@
 
 ### 3.1 Prepare the sample
 
-- Unzip the repo to `c:\`.
+
+- Unzip the repo to `c:\`. Please clone the sub modules by
+  ```
+  git clone --recurse-submodules https://github.com/Azure-Samples/iot-middleware-freertos-samples
+  ```
+
 
 - Double click to run `ESP-IDF 4.3 CMD` from your desktop and navigate to `c:\`.
 
