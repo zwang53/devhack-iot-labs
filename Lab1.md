@@ -141,7 +141,7 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
 
 
     
-- Press key `Q` and then `S` to exit the command line.
+- Press key `Q` and then `y` to exit the command line.
 
     <img src="images/10.png">
 
@@ -165,7 +165,7 @@ On `Espressif IoT Development Framework Configuration` UI, you may need to updat
 - Connect ESP32 devkit to your PC.
 - Find out the COM port number and take a note.
   
-  You may go to `Device Manager` -> `Ports(COM & LPT`.
+  You may go to `Device Manager` -> `Ports(COM & LPT）`.
 
     <img src="images/com-port.png">
 
