@@ -78,9 +78,10 @@ View the downloaded .avro file in a text editor, ideally in VS Code.
 
 Go back to Azure Portal. Click `+ Create a resource` -> Search `Event Hubs` -> Click `Create`.
 
-On `Create Namespace` blade, Select existing `Resource Group`, enter a `Namespace name` -> Location: `Southeast Asia` -> Pricing tier: `Basic` -> `Review + create`.
+On `Create Namespace` blade, Select existing `Resource Group`, enter a `Namespace name` -> Location: `Southeast Asia` -> Pricing tier: `Standard` -> `Review + create`.
 
-<img src="images/create-eventhub-ns.png" width=70%>
+
+<img src="images/3.1.123.png" width=90%>
 
 Once deployment is complete, click `Go to resource` to the `Event Hubs Namespace` page. This process may have to wait for a long time.
 
